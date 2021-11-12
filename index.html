@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
+    <!-- Style Custom -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- JavaScript-->
+
+    <title>Cadastro - Checkpoint 01</title>
+
+</head>
+
+<body>
+
+    <!-- INICIO CABECALHO -->
+    <header>
+        <a href="">
+            <img src="./img/tokyo-ghoul.jpg" alt="Logo">
+            <h1>CheckPoint</h1>
+        </a>
+
+    </header>
+    <!-- FIM CABECALHO -->
+
+    <main>
+        <!-- INICIO SECTION FORMULARIO -->
+        <section class="section-form">
+
+            <!-- INICIO FORMULARIO -->
+            <div id="form" class="form">
+
+                <div class="form-header">
+                    <h1 class="form-title">CADASTRO DO OTAKU</h1>
+                </div>
+
+                <div class="form-content">
+
+                    <form action="#" method="POST" id="formCadastro" name="formCadastro">
+                        <fieldset>
+                            <label class="block-field" for="input-name">NOME</label>
+                            <input class="text" type="text" id="name" maxlength="100" name="input-nome" required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="input-email">E-MAIL</label>
+                            <input class="text" type="email" id="email" name="input-email" required>
+                            <div class="line"></div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <label class="block-field" for="input-birth">DATA DE NASCIMENTO</label>
+                            <input class="text" type="date" id="nascimento" name="input-birth" 
+                                required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="input-img">URL DA IMAGEM</label>
+                            <input class="text" type="url" id="image" name="input-img" 
+                                required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset class="inline-fieldset">
+                            <label class="inline-field" for="maior">MAIOR DE 18 ANOS</label>
+
+                            <div class="radio-options">
+                                <input type="radio" id="radio" name="maior" value="Sim" >
+                                <label for="radio-yes">Sim</label>
+                                <input type="radio" id="radio" name="maior" value="Não" >
+                                <label for="radio-no">Não</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="tipo">TERMOS DE USO</label>
+
+                            <div class="check-options">
+                                <div class="check-option">
+                                    <label for="amigos">Li e aceito</label>
+                                    <input type="checkbox" id="termos" checked></input>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="button" id="btn">ENVIAR</button>
+                            <button type="reset">APAGAR</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- FIM FORMULARIO -->
+
+            <div class="perfil">
+                <h1>Perfil</h1>
+    
+                <img class="imagem" id="imagem" src="" width="300" alt="">
+    
+                <p>
+                    
+                </p>
+            </div>
+            <!-- perfil -->
+
+        </section>
+        <!-- FIM SECTION FORMULARIO -->
+
+    </main>
+
+    <!-- RODAPE -->
+    <footer>
+        <p>Front-End II do Curso CTD da Digital House</p>
+        
+        <div class="grupo">
+
+            <a target="_blank" href="https://github.com/WallaceCS21"><i class="fab fa-github"></i>Wallace Souza</a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
